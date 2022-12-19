@@ -23,7 +23,7 @@ export default function AnotherTwo() {
         </p>
         <div className="botao_container">
           <a href="https://github.com/limasbrn/study-buddies-app">
-            <button className="btn_github_nested centralize">
+            <button className="btn_github_nested centralize normal_subtext">
               <img src={GithubIcon} />
               <span>Ver código no repositório</span>
             </button>
