@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import GithubIcon from "../../icons/github-icon-white.svg";
+import GithubIcon from "../../icons/github-icon-black.svg";
 
 export default function Another() {
   return (
@@ -27,7 +27,7 @@ export default function Another() {
         </p>
         <div className="botao_container">
           <a href="https://github.com/limasbrn/outcast-ecommerce">
-            <button className="btn_github_nested centralize">
+            <button className="btn_github_nested centralize normal_subtext">
               <img src={GithubIcon} />
               <span>Ver código no repositório</span>
             </button>

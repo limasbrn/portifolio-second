@@ -163,6 +163,15 @@
 .btn_github:hover {
   background-color: #8a64f3;
 }
+.btn_github_nested{
+  padding: 5px 10px;
+  color:black;
+  background-color:white ;
+  border: 3px solid black;
+  border-radius: 30px;
+  gap: 10px;
+  margin-top: 15px;
+}
 .container_skills {
   display: flex;
   flex-wrap: wrap;
