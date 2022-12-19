@@ -1,0 +1,295 @@
+.btn-section {
+  display: flex;
+  position: relative;
+  height: 8vh;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+.linha1 {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+  z-index: 1;
+}
+.mode_btn {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 2;
+}
+.section_presentation {
+  position: relative;
+  height: 92vh;
+}
+.linha2 {
+  position: absolute;
+  top: 50%;
+  right: -150px;
+  z-index: 1;
+}
+.linha_curve {
+  display: none;
+  position: absolute;
+  left: -270px;
+  top: -300px;
+}
+.x1_left {
+  position: absolute;
+  top: 30px;
+  left: 47px;
+  z-index: 1;
+}
+.x2_right {
+  position: absolute;
+  bottom: 150px;
+  right: 70px;
+  z-index: 1;
+}
+.x3_right {
+  position: absolute;
+  left: 30px;
+  bottom: -60px;
+}
+.black_circle {
+  position: absolute;
+  bottom: 75px;
+  right: 80px;
+  z-index: 1;
+}
+.black_circle_top {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+}
+.circle_left {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  left: 30%;
+}
+.eye_1 {
+  position: absolute;
+  bottom: 37px;
+  left: 30px;
+  z-index: 1;
+}
+.eye_2 {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: 100;
+}
+.presentation {
+  max-width: 270px;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+.presentation img {
+  width: 156px;
+}
+.section {
+  position: relative;
+  padding: 15px 0px;
+  z-index: 10;
+}
+.container {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 80%;
+  gap: 15px;
+  z-index: 10;
+}
+.container_projeto {
+  width: 100%;
+  min-height: fit-content;
+  flex-direction: column;
+  border: #e8e8e8 1px solid;
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+.container_projeto img {
+  opacity: 50%;
+  width: 100%;
+  height: auto;
+}
+.container_projeto img:hover {
+  opacity: 100%;
+}
+.project_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 25px 0px;
+  background-color: #000000;
+  color: white;
+  gap: 10px;
+}
+.tools_project {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tools_project li {
+  width: fit-content;
+  padding: 3px 3px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+}
+.projects {
+  flex-direction: column;
+  gap: 15px;
+}
+.botao_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn_github {
+  padding: 5px 10px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 30px;
+  gap: 10px;
+  margin-top: 15px;
+}
+.btn_github:hover {
+  background-color: #8a64f3;
+}
+.container_skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: white;
+  z-index: 10;
+}
+.item {
+  width: fit-content;
+  height: 35px;
+  padding: 0px 10px;
+  border-radius: 30px;
+  background-color: black;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+.link_contact {
+  display: flex;
+  gap: 10px;
+}
+.link_contact p {
+  color: black;
+}
+.link_contact p:hover {
+  color: #8a64f3;
+}
+.footer_container {
+  position: relative;
+  display: flex;
+  overflow-y: hidden;
+  flex-direction: column;
+  height: 200px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px;
+}
+.footer_line {
+  display: none;
+  position: absolute;
+  bottom: -15px;
+  left: 120px;
+}
+.footer_logo {
+  width: auto;
+  height: 40px;
+}
+/* media queries */
+@media screen and (min-width: 450px) {
+  .presentation {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .presentation {
+    max-width: 500px;
+  }
+  .eye_1 {
+    bottom: 175px;
+    left: 100px;
+  }
+  .linha_curve {
+    display: flex;
+  }
+  .container_skills {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .container,
+  .container_skills {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .circle_left {
+    display: flex;
+  }
+  .eye_2 {
+    top: 50px;
+    right: 150px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .section {
+    width: 100%;
+    margin: auto;
+  }
+  .item {
+    height: 30px;
+    font-size: 13.5px;
+  }
+  .projects {
+    flex-direction: row;
+  }
+  .container_projeto {
+    width: 33%;
+  }
+  .botao_container,
+  footer {
+    justify-content: flex-end;
+  }
+  .linha1 {
+    top: -15px;
+    right: 100px;
+  }
+  .footer_line {
+    display: flex;
+  }
+  .x3_right {
+    left: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .linha2 {
+    right: -100px;
+  }
+  .x2_right {
+    right: 140px;
+  }
+  .black_circle {
+    right: 120px;
+  }
+  .x3_right {
+    left: 400px;
+  }
+}
